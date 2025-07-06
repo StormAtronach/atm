@@ -3,12 +3,12 @@ local log = mwse.Logger.new()
 
 local authors = {
 	{
-		name = "C3pa",
-		url = "https://next.nexusmods.com/profile/C3pa/mods",
+		name = "Codering",
+		url = "https://github.com/thomasblasquez",
 	},
 	{
-		name = "Some other author",
-		url = "https://www.google.com",
+		name = "Storm Atronach",
+		url = "https://next.nexusmods.com/profile/StormAtronach0",
 	}
 }
 
@@ -22,7 +22,7 @@ end
 --- @param container mwseMCMSideBarPage
 local function createSidebar(container)
 	container.sidebar:createInfo({
-		text = "\nWelcome to Template Mod!\n\nHover over a feature for more info.\n\nMade by:",
+		text = "\nWelcome to Attack Type Matters!\n\nHover over a feature for more info.\n\nMade by:",
 		postCreate = center,
 	})
 	for _, author in ipairs(authors) do
@@ -36,8 +36,8 @@ end
 
 local function registerModConfig()
 	local template = mwse.mcm.createTemplate({
-		name = "Template Mod",
-		headerImagePath = "MWSE/mods/template/mcm/Header.tga",
+		name = "Attack Type Matters",
+		-- headerImagePath = "MWSE/mods/template/mcm/Header.tga",
 		config = config,
 		defaultConfig = config.default,
 		showDefaultSetting = true,
